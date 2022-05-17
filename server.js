@@ -25,7 +25,7 @@ app.get('/tip/:total/:tipPercentage', (req, res)=>{
 
 app.get('/magic/:Millionaire', (req, res)=>{
     res.send(
-		`<p>${req.params.Millionaire}</p> <p>${
+		req.params.Millionaire +`<p>${
 			responses[randomNumber(responses.length)]
 		}</p>`
 	);
